@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="TabLayoutPlus">
+        <attr name="subTextSize" format="dimension|reference" />
+        <attr name="countTextColor" format="color|reference" />
+        <attr name="countTextSize" format="dimension|reference" />
+        <attr name="countTextBackground" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer"/>
+        <attr name="pet_iconHide" format="integer"/>
+        <attr format="reference" name="start"/>
+        <attr format="dimension" name="pad"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="Switch">
+        <attr name="checked" format="reference|boolean"/>
+        <attr name="switchOnColor" format="reference|color"/>
+        <attr name="switchOffColor" format="reference|color"/>
+        <attr name="spotOnColor" format="reference|color"/>
+        <attr name="spotOnColorIn" format="reference|color"/>
+        <attr name="spotOffColor" format="reference|color"/>
+        <attr name="spotOffColorIn" format="reference|color"/>
+        <attr name="switchOnStrokeColor" format="reference|color"/>
+        <attr name="switchOffStrokeColor" format="reference|color"/>
+        <attr name="spotPadding" format="reference|dimension"/>
+        <attr name="duration" format="reference|integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">欣助手</string>
+    <string name="navigation_drawer_open">打开导航栏</string>
+    <string name="navigation_drawer_close">关闭导航栏</string>
+    <string name="empty_no_data">没有数据，请点击重试</string>
+    <string name="empty_network_error">网络错误，点击重试</string>
+    <!--语音-->
+    <string name="up_for_cancel">手指上滑，取消发送</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="time_too_short">录音时间过短</string>
+</resources>

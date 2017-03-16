@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yxld.xzs">
+
+    <!--打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--联网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--BugHD需要权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- 外部存储读权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 语音录入权限相关 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name="com.yxld.xzs.base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--BUG HD-->
+        <meta-data
+            android:name="BUG_HD_SDK_GENERAL_KEY"
+            android:value="db29bfcd77eeff00585ab9ecb9c794c7" />
+        <!--auto 屏幕适配-->
+        <meta-data android:name="design_width" android:value="1080"/>
+        <meta-data android:name="design_height" android:value="1920"/>
+         <!--微信Tinker-->
+        <meta-data android:name="TINKER_ID" android:value="tinker_id_b898763"/>
+
+       <activity
+            android:name=".activity.Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.Login.ChangeActivity"
+            android:label="修改密码"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name=".activity.Navigation.SettingsActivity"
+            android:label="设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Income.IncomeActivity"
+            android:label="钱包"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Navigation.QuardActivity"
+            android:label="特殊门禁"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Navigation.NightActivity"
+            android:label="通知管理"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Income.DetailsActivity"
+            android:label="明细"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Navigation.SummaryActivity"
+            android:label="工作汇总"
+            android:screenOrientation="portrait" />
+
+        <!--<activity-->
+            <!--android:name=".activity.Navigation.InvitationActivity"-->
+            <!--android:label="邀请好友"-->
+            <!--android:screenOrientation="portrait" />-->
+
+
+        <activity
+            android:name=".activity.Repair.RepairActivity"
+            android:label="报修审批"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Repair.WorkActivity"
+            android:label="待指派"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Repair.NewActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".utils.AudioService"
+            android:enabled="true"
+            android:permission=".AudioService">
+            <intent-filter>
+                <action android:name=".AudioService" />
+            </intent-filter>
+        </service>
+
+        <!--极光推送 -->
+        <!-- User defined. 用户自定义的广播接收器-->
+        <receiver
+            android:name=".jipush.DemoMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.yxld.xzs" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

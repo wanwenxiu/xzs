@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/income_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            android:background="#018AF1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/income_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/income_money"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50px"
+                android:drawablePadding="30px"
+                android:drawableRight="@mipmap/icon_i"
+                android:text="总资产(元)"
+                android:textColor="@color/drawer_white"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/income_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20px"
+                android:text="0.00"
+                android:textColor="@color/drawer_white"
+                android:textSize="100px"
+                android:textStyle="bold" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/income_layout2"
+            android:layout_below="@+id/income_layout1" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/income_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/drawer_white">
+
+            <Button
+                android:id="@+id/income_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25px"
+                android:background="@drawable/button_selector"
+                android:text="提现"
+                android:textColor="@color/drawer_white" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

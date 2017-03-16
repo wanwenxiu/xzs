@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 导航栏颜色 -->
+    <color name="drawer_blue">#008AF1</color>
+    <color name="drawer_light_blue">#27A5FF</color>
+    <color name="gray">#ffd4d4d4</color>
+    <color name="drawer_gray">#82929F</color>
+    <color name="drawer_light_gray">#9BA8B2</color>
+    <color name="drawer_white">#ffffff</color>
+
+    <!-- 设置颜色 -->
+    <color name="line">#fff1f1f1</color>
+    <color name="seletor_layout">#F2F2F2</color>
+
+    <!--Tablayout颜色 -->
+    <color name="toolbar_color">#018AF1</color>
+
+    <!--Tablayout颜色 -->
+    <color name="text_color_primary_red">#f74800</color>
+
+    <!--我的收入颜色 -->
+    <color name="button_withdraw"> #01AA3B</color>
+    <color name="seletor_button_withdraw">#8BC34A</color>
+
+    <!--主界面颜色-->
+    <color name="text_song">#73C676</color>
+    <color name="text_black">#000000</color>
+    <color name="text_orange">#FFA73B</color>
+    <color name="text_red">#FF0000</color>
+    <color name="background">#E4E4E4</color>
+    <color name="yellow">#ffd700</color>
+
+    <!--选择图片颜色-->
+    <color name="multiple_image_select_primaryDark">#018AF1</color>
+    <color name="multiple_image_select_accent">#018AF1</color>
+    <color name="multiple_image_select_primary">#018AF1</color>
+    <color name="image_color">#f6f6f6</color>
+
+    <!--报修颜色-->
+    <color name="repair_black">#323232</color>
+    <color name="repair_gray">#646464</color>
+    <color name="repair_blue">#0079c2</color>
+    <color name="repair_line">#e1e1e1</color>
+    <color name="repair_blank">#d6d7dc</color>
+    <color name="repair_bg">#eeeeee</color>
+    <color name="repair_select">#b4b4b4</color>
+    <color name="colorRedBg">#fa5148</color>
+    <color name="dark_gray">#909090</color>
+    <color name="radio_color_selected">#0079c2</color>
+    <color name="radio_color_normal">#999999</color>
+
+</resources>
